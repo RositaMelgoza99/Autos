@@ -31,9 +31,10 @@
         android:id="@+id/descripcion"
         android:layout_width="389dp"
         android:layout_height="375dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="36dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
