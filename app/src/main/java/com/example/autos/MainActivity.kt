@@ -13,6 +13,12 @@ import com.example.autos.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+    companion object {
+        const val CAR_CATALOG_TITLE = "carCatalogTitle"
+        const val CAR_CATALOG_DESCRIPTION = "carCatalogDescription"
+        const val CAR_CATALOG_IMAGE = "CarCatalogImage"
+    }
+
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
