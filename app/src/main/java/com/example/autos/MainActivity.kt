@@ -1,5 +1,7 @@
 package com.example.autos
 
+import SnackbarLib
+import android.app.AlertDialog
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -37,6 +39,20 @@ class MainActivity : AppCompatActivity() {
         binding.fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
+
+
+           // SnackbarLib().showSnackBarLong(binding, "hola", R.color.cardview_light_background)
+            SnackbarLib().hello()
+            //SnackbarLib().mainSubstract()
+            //SnackbarLib().mainadd()
+
+
+
+
+
+
+
+
         }
     }
 

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="REBOOT_SCREEN_DELAY">2000</integer>
+    <string name="alertdialog_title_aviso">Aviso</string>
+    <string name="alertdialog_title_cerrar_sesion">Cerrar sesión</string>
+    <string name="alertdialog_title_salir_de_la_aplicacion">Salir de la aplicación</string>
+    <string name="app_name">Davinci</string>
+    <string name="fotografias_util_toma_fotografia_fallida">Se encontro un error al momento de procesar la fotografia.</string>
+    <string name="leyenda_generica_aceptar">Aceptar</string>
+    <string name="leyenda_generica_cancelar">Cancelar</string>
+    <string name="leyenda_generica_cargando">Cargando</string>
+    <string name="leyenda_generica_cerrar_sesion">¿Estas seguro que deseas cerrar la sesión?</string>
+    <string name="leyenda_generica_deseas_continuar">¿Deseas continuar?</string>
+    <string name="leyenda_generica_no">No</string>
+    <string name="leyenda_generica_salir_de_la_aplicacion">¿Estas seguro que deseas salir de la aplicación?</string>
+    <string name="leyenda_generica_si">Si</string>
+    <string name="validacion_permisos_marshmallow_usuario_no_acepto_todos_los_permisos">Es necesario que aceptes todos los permisos de la aplicación para que esta pueda operar correctamente, por favor habilitalos todos. \n Se cerrará la aplicación.</string>
+</resources>

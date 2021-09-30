@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_visor_fotografias"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".CameraUtil.CameraVisor">
+
+    <WebView
+        android:id="@+id/webview_activity_visor_fotografias"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/relativelayout_activity_visor_fotografias_contenedor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <!-- BOTON CHECK IMAGEN -->
+        <LinearLayout
+            android:id="@+id/linearlayout_activity_vysor_fotografias_salir"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight=".5"
+            android:clickable="true"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgv_activity_visor_fotografias_salir"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@android:drawable/ic_menu_revert" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -73,6 +73,7 @@ class FirstFragment : Fragment() {
                 autoSelected.descripcion,
                 autoSelected.imagen
             )
+
             findNavController().navigate(action)
         }
     }

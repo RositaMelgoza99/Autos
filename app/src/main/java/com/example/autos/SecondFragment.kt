@@ -54,11 +54,7 @@ class SecondFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         // Recuperar la informacion
-        arguments?.let {
-            mTitle = SecondFragmentArgs.fromBundle(it).carCatalogTitle
-            mDescription = SecondFragmentArgs.fromBundle(it).carCatalogDescription
-            mImage = SecondFragmentArgs.fromBundle(it).carCatalogImage
-        }
+
 
         // Inicializando lo componentes
         val tvTitle = view.findViewById<TextView>(R.id.titulo)
