@@ -41,10 +41,12 @@ class MainActivity : AppCompatActivity() {
                 .setAction("Action", null).show()
 
 
-           // SnackbarLib().showSnackBarLong(binding, "hola", R.color.cardview_light_background)
+
             SnackbarLib().hello()
-            //SnackbarLib().mainSubstract()
-            //SnackbarLib().mainadd()
+            SnackbarLib().add(10,20)
+            SnackbarLib().substract(3, 18)
+
+
 
 
 
