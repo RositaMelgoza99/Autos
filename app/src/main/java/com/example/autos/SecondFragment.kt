@@ -15,8 +15,8 @@ import com.example.autos.MainActivity.Companion.CAR_CATALOG_IMAGE
 import com.example.autos.MainActivity.Companion.CAR_CATALOG_TITLE
 import com.example.autos.databinding.FragmentSecondBinding
 import kotlinx.android.synthetic.main.fragment_second.*
-import kotlinx.android.synthetic.main.item_auto.*
-import kotlinx.android.synthetic.main.item_auto.view.*
+import kotlinx.android.synthetic.main.item_car.*
+import kotlinx.android.synthetic.main.item_car.view.*
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.

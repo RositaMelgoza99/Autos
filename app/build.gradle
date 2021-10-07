@@ -64,6 +64,8 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:2.3.5")
     implementation("androidx.navigation:navigation-ui-ktx:2.3.5")
     implementation fileTree(dir: "libs", include: ["*.jar", "*.aar"])
+
+    implementation 'com.github.RositaMelgoza99:einstein:1.0.2'
 }
 apply plugin: "androidx.navigation.safeargs"
 

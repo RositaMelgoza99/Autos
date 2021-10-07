@@ -6,35 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".SecondFragment">
 
-    <ImageView
-        android:id="@+id/imagen"
-        android:layout_width="314dp"
-        android:layout_height="233dp"
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_fragment_second_carimage"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="52dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.554"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:src="@tools:sample/avatars" />
 
-    <TextView
-        android:id="@+id/titulo"
-        android:layout_width="276dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="252dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imagen" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_fragment_second_title_car"
+        android:layout_width="105dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="108dp"
+        android:text="@string/lbl_cartitle_fragment_second"
+        app:layout_constraintEnd_toEndOf="@id/iv_fragment_second_carimage"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="233dp" />
 
-    <TextView
-        android:id="@+id/descripcion"
-        android:layout_width="389dp"
-        android:layout_height="375dp"
-        android:layout_marginBottom="36dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.272"
-        app:layout_constraintStart_toStartOf="parent" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_fragment_second_description_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_cardescription_fragment_second"
+        app:layout_constraintEnd_toEndOf="@id/tv_fragment_second_description_car"
+        tools:layout_editor_absoluteY="291dp"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -37,12 +37,11 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+            Snackbar.make(view,SnackbarLib().hello(), Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
 
 
 
-            SnackbarLib().hello()
             SnackbarLib().add(10,20)
             SnackbarLib().substract(3, 18)
 

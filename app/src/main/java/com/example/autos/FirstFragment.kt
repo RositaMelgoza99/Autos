@@ -6,16 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
-import androidx.navigation.Navigation
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.fragment.navArgs
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.autos.databinding.FragmentFirstBinding
 import kotlinx.android.synthetic.main.fragment_first.*
-import kotlinx.android.synthetic.main.fragment_second.*
-import kotlinx.android.synthetic.main.item_auto.*
+import kotlinx.android.synthetic.main.item_car.*
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -35,43 +29,44 @@ class FirstFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val auto1 =
-            Auto("Chevy", 35000.0, "Es un Automovil muy economico y practico", R.drawable.chevy)
-        val auto2 = Auto(
+        val car1 =
+            Car("Chevy", 35000.0, "Es un Automovil muy economico y practico", R.drawable.chevy)
+        val car2 = Car(
             "Onix",
             275000.0,
             "Desafia el status con sus caracteristicas nunca antes vistas",
             R.drawable.onix
         )
-        val auto3 = Auto(
+        val car3 = Car(
             "Spark",
             23500.0,
             "Spark puedes maniobrar y estacionar en espacios reducidos cuando andas por la ciudad en busca de aventuras.",
             R.drawable.spark
         )
-        val auto4 = Auto(
+        val car4= Car(
             "Cruze",
             149000.0,
             "Además de la potencia de su motor turbo, la seguridad más avanzada, todo su confort y la exclusiva tecnología WI-FI",
             R.drawable.cruze
         )
-        val auto5 = Auto(
+        val car5 = Car(
             "Malibu",
             220000.0,
             "Este auto de tamaño mediano, que une un estilo llamativo con un interior diseñado con la mayor destreza",
             R.drawable.malibu
+
         )
-        val listaProductos = listOf(auto1, auto2, auto3, auto4, auto5)
-        val adapter = AutoAdapter(this.requireContext(), listaProductos)
-        listas.adapter = adapter
+        val listProduct = listOf(car1, car2, car3, car4, car5)
+        val adapter = CarAdapter(this.requireContext(), listProduct)
+        list.adapter = adapter
 
         //Metodo
-        listas.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
-            val autoSelected = parent.getItemAtPosition(position) as Auto
+        list.onItemClickListener = AdapterView.OnItemClickListener { parent, view, position, id ->
+            val autoSelected = parent.getItemAtPosition(position) as Car
             val action= FirstFragmentDirections.actionFirstFragmentToSecondFragment(
-                autoSelected.nombre,
-                autoSelected.descripcion,
-                autoSelected.imagen
+                autoSelected.name,
+                autoSelected.description,
+                autoSelected.image
             )
 
             findNavController().navigate(action)
