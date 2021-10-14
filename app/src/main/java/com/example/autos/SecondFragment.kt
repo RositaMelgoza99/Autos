@@ -27,19 +27,9 @@ class SecondFragment : Fragment() {
     private var mImage: Int = 0
     private var mDescription: String = ""
 
-    fun newInstance(
-        title: String,
-        description: String,
-        image: Int
-    ): SecondFragment {
-        val fragment = SecondFragment()
-        val args = Bundle()
-        args.putString(CAR_CATALOG_TITLE, title)
-        args.putString(CAR_CATALOG_DESCRIPTION, description)
-        args.putInt(CAR_CATALOG_IMAGE, image)
-        fragment.arguments = args
-        return fragment
-    }
+    // obtendra los argumentos que tiene la lista
+    private val args: SecondFragmentArgs by navArgs()
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -51,20 +41,11 @@ class SecondFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        // Recuperar la informacion
-
-
         // Inicializando lo componentes
-
-        val tvTitle = view.findViewById<TextView>(R.id.tv_fragment_second_title_car)
-        val tvDescription = view.findViewById<TextView>(R.id.tv_fragment_second_description_car)
-        val imgImage = view.findViewById<ImageView>(R.id.iv_fragment_second_carimage)
-
-        tvTitle.text=mTitle
-        tvDescription.text=mDescription
-        imgImage.setImageResource(mImage)
+        binding.ivFragmentSecondCarimage.setImageResource(args.carCatalogImage)
+        binding.tvFragmentSecondTitleCar.text = args.carCatalogTitle
+        binding.tvFragmentSecondDescriptionCar.text = args.carCatalogDescription
     }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

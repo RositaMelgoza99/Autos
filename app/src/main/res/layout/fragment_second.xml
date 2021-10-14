@@ -18,20 +18,24 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_fragment_second_title_car"
-        android:layout_width="105dp"
-        android:layout_height="35dp"
-        android:layout_marginEnd="108dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="@string/lbl_cartitle_fragment_second"
-        app:layout_constraintEnd_toEndOf="@id/iv_fragment_second_carimage"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="233dp" />
+        app:layout_constraintEnd_toEndOf="@+id/iv_fragment_second_carimage"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@id/iv_fragment_second_carimage"
+        app:layout_constraintTop_toBottomOf="@+id/iv_fragment_second_carimage"
+        tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_fragment_second_description_car"
-        android:layout_width="404dp"
-        android:layout_height="276dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="@string/lbl_cardescription_fragment_second"
-        app:layout_constraintEnd_toEndOf="@id/tv_fragment_second_description_car"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="295dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fragment_second_title_car"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
