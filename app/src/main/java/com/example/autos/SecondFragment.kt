@@ -14,9 +14,7 @@ import com.example.autos.MainActivity.Companion.CAR_CATALOG_DESCRIPTION
 import com.example.autos.MainActivity.Companion.CAR_CATALOG_IMAGE
 import com.example.autos.MainActivity.Companion.CAR_CATALOG_TITLE
 import com.example.autos.databinding.FragmentSecondBinding
-import kotlinx.android.synthetic.main.fragment_second.*
-import kotlinx.android.synthetic.main.item_car.*
-import kotlinx.android.synthetic.main.item_car.view.*
+
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
@@ -26,8 +24,8 @@ class SecondFragment : Fragment() {
     private val binding get() = _binding!!
 
     private var mTitle: String = ""
-    private var mDescription: String = ""
     private var mImage: Int = 0
+    private var mDescription: String = ""
 
     fun newInstance(
         title: String,
@@ -57,9 +55,10 @@ class SecondFragment : Fragment() {
 
 
         // Inicializando lo componentes
-        val tvTitle = view.findViewById<TextView>(R.id.titulo)
-        val tvDescription = view.findViewById<TextView>(R.id.descripcion)
-        val imgImage = view.findViewById<ImageView>(R.id.imagen)
+
+        val tvTitle = view.findViewById<TextView>(R.id.tv_fragment_second_title_car)
+        val tvDescription = view.findViewById<TextView>(R.id.tv_fragment_second_description_car)
+        val imgImage = view.findViewById<ImageView>(R.id.iv_fragment_second_carimage)
 
         tvTitle.text=mTitle
         tvDescription.text=mDescription

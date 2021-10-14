@@ -3,6 +3,7 @@ package com.example.autos
 import SnackbarLib
 import android.app.AlertDialog
 import android.os.Bundle
+import android.util.Log
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -15,6 +16,12 @@ import com.example.autos.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+    val onStart = "En esta fase se estaria viendo el diseño pero no se interactua con el usuario"
+    val onResume="En esta fase ya se interactua con el usuario"
+    val onPause = "Es cuando la aplicacion ya no esta en primer plano o ajustar las operaciones que no deben continuar"
+    val onStop = "Es cuando el usuario ya no puede ver la actividad y la app debe liberar o ajustar los recursos que no son necesarios mientras no sea visible para el usuario"
+    val onDestroy = "Se manda llamar antes de que finalice la actividad y pueden recuperar cualquier elemento que se necesite antes de que finalice el objeto Activity."
+    val onRestart = "Es cuando la actividad actual se vuelve a mostrar al usuario "
     companion object {
         const val CAR_CATALOG_TITLE = "carCatalogTitle"
         const val CAR_CATALOG_DESCRIPTION = "carCatalogDescription"
@@ -46,14 +53,6 @@ class MainActivity : AppCompatActivity() {
             SnackbarLib().substract(3, 18)
 
 
-
-
-
-
-
-
-
-
         }
     }
 
@@ -78,4 +77,39 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
     }
+
+
+
+    override fun onStart() {
+        Log.d(MainActivity.javaClass.name, onStart)
+        super.onStart()
+    }
+
+    override fun onResume() {
+        Log.d(MainActivity.javaClass.name, onResume)
+        super.onResume()
+    }
+
+    override fun onPause() {
+        Log.d(MainActivity.javaClass.name, onPause)
+        super.onPause()
+    }
+
+    override fun onStop() {
+        Log.d(MainActivity.javaClass.name, onStop )
+        super.onStop()
+    }
+
+
+    override fun onDestroy() {
+        Log.d(MainActivity.javaClass.name, onDestroy)
+        super.onDestroy()
+    }
+
+    override fun onRestart() {
+        Log.d(MainActivity.javaClass.name, onRestart)
+        super.onRestart()
+    }
+
+
 }

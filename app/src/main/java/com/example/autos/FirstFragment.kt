@@ -31,25 +31,29 @@ class FirstFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val car1 =
             Car("Chevy", 35000.0, "Es un Automovil muy economico y practico", R.drawable.chevy)
-        val car2 = Car(
+        val car2 =
+            Car(
             "Onix",
             275000.0,
             "Desafia el status con sus caracteristicas nunca antes vistas",
             R.drawable.onix
         )
-        val car3 = Car(
+        val car3 =
+            Car(
             "Spark",
             23500.0,
             "Spark puedes maniobrar y estacionar en espacios reducidos cuando andas por la ciudad en busca de aventuras.",
             R.drawable.spark
         )
-        val car4= Car(
+        val car4=
+            Car(
             "Cruze",
             149000.0,
             "Además de la potencia de su motor turbo, la seguridad más avanzada, todo su confort y la exclusiva tecnología WI-FI",
             R.drawable.cruze
         )
-        val car5 = Car(
+        val car5 =
+            Car(
             "Malibu",
             220000.0,
             "Este auto de tamaño mediano, que une un estilo llamativo con un interior diseñado con la mayor destreza",

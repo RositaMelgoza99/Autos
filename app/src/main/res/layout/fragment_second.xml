@@ -28,10 +28,10 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_fragment_second_description_car"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="404dp"
+        android:layout_height="276dp"
         android:text="@string/lbl_cardescription_fragment_second"
         app:layout_constraintEnd_toEndOf="@id/tv_fragment_second_description_car"
-        tools:layout_editor_absoluteY="291dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="295dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
