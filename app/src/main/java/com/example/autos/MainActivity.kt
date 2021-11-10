@@ -12,7 +12,11 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toolbar
+import androidx.navigation.navArgs
 import com.example.autos.databinding.ActivityMainBinding
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.item_car.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         const val CAR_CATALOG_TITLE = "carCatalogTitle"
         const val CAR_CATALOG_DESCRIPTION = "carCatalogDescription"
         const val CAR_CATALOG_IMAGE = "CarCatalogImage"
+        const val CAR_CATALOG_PRICE = "CarCatalogPrice"
     }
 
     private lateinit var appBarConfiguration: AppBarConfiguration
@@ -34,26 +39,20 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(binding.toolbar)
+        //setSupportActionBar(binding.toolbar)
+        setSupportActionBar(findViewById(R.id.toolbar))
+
+
 
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
 
-        binding.fab.setOnClickListener { view ->
-            Snackbar.make(view,SnackbarLib().hello(), Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
 
-
-
-            SnackbarLib().add(10,20)
-            SnackbarLib().substract(3, 18)
-
-
-        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

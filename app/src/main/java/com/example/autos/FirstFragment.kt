@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.AdapterView
 import androidx.navigation.fragment.findNavController
 import com.example.autos.databinding.FragmentFirstBinding
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_first.*
 import kotlinx.android.synthetic.main.item_car.*
 
@@ -70,10 +71,15 @@ class FirstFragment : Fragment() {
             val action= FirstFragmentDirections.actionFirstFragmentToSecondFragment(
                 autoSelected.name,
                 autoSelected.description,
-                autoSelected.image
+                autoSelected.image,
+                autoSelected.price.toString()
             )
 
             findNavController().navigate(action)
+
+               // autoSelected.name
+
+
         }
     }
 

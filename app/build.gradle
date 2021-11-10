@@ -66,6 +66,11 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar", "*.aar"])
 
     implementation 'com.github.RositaMelgoza99:einstein:1.0.2'
+   //Splash
+    implementation "com.airbnb.android:lottie:3.4.0"
+
+    // CARD VIEW
+    implementation("androidx.cardview:cardview:1.0.0")
 }
 apply plugin: "androidx.navigation.safeargs"
 
