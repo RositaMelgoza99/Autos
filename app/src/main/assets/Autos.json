@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "nombre": "Chevy",
+    "precio": "35000.0",
+    "descripcion": "Es un Automovil muy economico y practico",
+    "imagen": "https://autodinamico.mx/wp-content/uploads/2017/12/chevy.jpg"
+  },
+   {
+    "id": "2",
+    "nombre": "Onix",
+    "precio": "275000.0",
+    "descripcion": "Desafia el status con sus caracteristicas nunca antes vistas",
+   "imagen": "https://img.autocosmos.com/noticias/fotos/preview/NAZ_5b32ad15ffda480786afa1a96df92841.jpg"
+  },
+   {
+     "id": "3",
+    "nombre": "Spark",
+    "precio": "23500.0",
+    "descripcion": "Spark puedes maniobrar y estacionar en espacios reducidos cuando andes por la ciudad en busca de aventuras.",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Chevrolet_Spark_LS%2B_1.2_%E2%80%93_Frontansicht%2C_26._Juni_2011%2C_Mettmann.jpg"
+  },
+  {
+    "id": "4",
+    "nombre": "Cruze",
+    "precio": "149000.0",
+    "descripcion": "Además de la potencia de su motor turbo, la seguridad más avanzada, todo su confort y la exclusiva tecnología WI-FI.",
+    "imagen": "https://fotos.perfil.com/2019/12/17/chevrolet-actualizo-la-version-lt-del-cruze-824280.jpg"
+  },
+  {
+    "id": "5",
+    "nombre": "Malibu",
+    "precio": "220000.0",
+    "descripcion": "Este auto de tamaño mediano, que une un estilo llamativo con un interior diseñado con la mayor destreza",
+    "imagen": "https://es.chevrolet.com/content/dam/chevrolet/na/us/english/index/vehicles/2022/cars/malibu/01-images/colorizer/2022-malibu-1lt-gsk-colorizer.jpg?imwidth=960"
+  }
+
+ ]

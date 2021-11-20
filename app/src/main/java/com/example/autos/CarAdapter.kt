@@ -16,9 +16,6 @@ class CarAdapter(private val mContext: Context, private val listProduct: List<Ca
         layout.iv_item_auto_carimage.setImageResource(product.image)
         layout.tv_item_auto_carname.text=product.name
         layout.tv_item_auto_price.text= "$${product.price}"
-
-
-
         return layout
     }
 

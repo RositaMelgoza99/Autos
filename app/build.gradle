@@ -75,6 +75,9 @@ dependencies {
      // Room version para  base de datos
     implementation "androidx.room:room-runtime:2.3.0"
     annotationProcessor "androidx.room:room-compiler:2.3.0"
+
+    //Biblioteca de gson
+    implementation("com.google.code.gson:gson:2.8.9")
 }
 apply plugin: "androidx.navigation.safeargs"
 

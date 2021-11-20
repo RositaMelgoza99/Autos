@@ -18,7 +18,4 @@
         app:lottie_loop="false"
         android:scaleType="fitCenter"
         app:lottie_fileName="car.json" />
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
